@@ -222,7 +222,17 @@ public class AirHockeyRenderer implements Renderer {
                 //tire line 4
                 -.45f,-.17f,
                 -.45f,-.11f,
-                -.55f,-.17f
+                -.55f,-.17f,
+                //tire2 tri 1
+                .68f,-0.11f,
+                .58f,-0.17f,
+                .78f,-0.17f,
+                //tire tri 2
+                .58f,-0.17f,
+                .78f,-0.17f,
+                .68f,-0.25f
+
+
 
 
 
@@ -435,6 +445,12 @@ public class AirHockeyRenderer implements Renderer {
         //tire line 4
         glUniform4f(uColorLocation, 0.0f, 0.0f, 0.0f, 1.0f);
         glDrawArrays(GL_TRIANGLES, 80, 3);
+        //tire 2 line 1
+        glUniform4f(uColorLocation, 0.0f, 0.0f, 0.0f, 1.0f);
+        glDrawArrays(GL_TRIANGLES, 83, 3);
+        //tire 2 line 2
+        glUniform4f(uColorLocation, 0.0f, 0.0f, 0.0f, 1.0f);
+        glDrawArrays(GL_TRIANGLES, 86, 3);
 
 
 
